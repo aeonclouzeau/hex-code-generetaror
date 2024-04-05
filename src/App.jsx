@@ -1,11 +1,16 @@
+import random_hex from "./utils";
 import Color from "./Color";
 import "./App.css";
 
 function App() {
 	return (
-		<>
-			<Color />
-		</>
+		<div>
+			<Color hex={random_hex()} />
+			<Color hex={random_hex()} />
+			<Color hex={random_hex()} />
+			<Color hex={random_hex()} />
+			<Color hex={random_hex()} />
+		</div>
 	);
 }
 

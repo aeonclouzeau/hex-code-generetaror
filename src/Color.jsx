@@ -1,9 +1,11 @@
-import random_hex from "./utils";
+import "./Color.css";
 
-const Color = () => {
+const Color = (hex) => {
+	console.log(hex.hex);
+	let backgroundColor = hex.hex;
 	return (
-		<div color={random_hex}>
-			<p>#{random_hex()}</p>
+		<div className="color-bar" style={{ backgroundColor }}>
+			<p>{hex.hex}</p>
 		</div>
 	);
 };
